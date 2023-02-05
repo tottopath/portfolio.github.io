@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>My Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Contact</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+    <main>
+        <section id="projects">
+            <textarea id="code-text" readonly></textarea>
+          </section>
+        <div style="display:flex;flex-wrap:wrap;" align="center">
+          <div style="width:50%;">
+            <section>
+              <h2><a href="https://www.linkedin.com/in/shreyas-t-304007123/">Linkedin</a></h2>
+              <p>Name ig: Shreyas Tuttagunta</p>
+            </section>
+          </div>
+          <div style="width:50%;">
+            <section>
+                <h2><a href="mailto:shreyastuttagunta15@gmail.com">E-mail me?</a></h2>
+                <p>shreyastuttagunta15@gmail.com</p>
+            </section>
+          </div>
+          <div style="width:100%;">
+            <section>
+                <h2><a href="https://github.com/tottopath">GitHub</a></h2>
+                <p>Username: tottopath</p>
+            </section>
+          </div>
+        </div>
+      </main>
+
+    <footer>
+      <p>Copyright &copy; 2023</p>
+    </footer>
+    <script>
+      const textarea = document.getElementById("code-text");
+      const code = `Welllllllll\nI am an easy person to find\nYou can find me here:`;
+      let i = 0;
+
+      const typeCode = setInterval(() => {
+        textarea.value += code[i];
+        i++;
+        if (i >= code.length) {
+          clearInterval(typeCode);
+          setTimeout(removeCode,2000);
+        }
+      }, 50);
+
+      function removeCode() {
+        const deleteCode = setInterval(() => {
+            textarea.value = textarea.value.slice(0, -1);
+            if (textarea.value.length === 0) {
+              clearInterval(deleteCode);
+              textarea.classList.add("fade-out");
+        setTimeout(() => {
+          textarea.style.display = "none";
+        }, 1000);
+      }
+    }, 50);
+  }
+
+      </script>
+  </body>
+</html>

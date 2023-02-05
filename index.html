@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+        <section id="projects">
+            <textarea id="code-text" readonly></textarea>
+          </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit posuere lectus, quis placerat mauris convallis at. Maecenas auctor nisl quis nisi posuere bibendum. Aliquam erat volutpat. Morbi velit velit, eleifend euismod tempus eu, congue vel massa.</p>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023</p>
+    </footer>
+    <script>
+      const textarea = document.getElementById("code-text");
+      const code = `Hi My name is Shreyas Tuttagunta\nNice to meet you`;
+      let i = 0;
+
+      const typeCode = setInterval(() => {
+        textarea.value += code[i];
+        i++;
+        if (i >= code.length) {
+          clearInterval(typeCode);
+          setTimeout(removeCode,2000);
+        }
+      }, 50);
+
+      function removeCode() {
+        const deleteCode = setInterval(() => {
+            textarea.value = textarea.value.slice(0, -1);
+            if (textarea.value.length === 0) {
+              clearInterval(deleteCode);
+              textarea.classList.add("fade-out");
+        setTimeout(() => {
+          textarea.style.display = "none";
+        }, 1000);
+      }
+    }, 50);
+  }
+
+      </script>
+  </body>
+</html>
