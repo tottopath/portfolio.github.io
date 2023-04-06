@@ -2,19 +2,19 @@ body {
     font-family: 'Fira Code', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #29272A;
-    color: #9885BB;
+    background-color: #333333;
+    color: #333333;
   }
 
   header {
-    background-color: #9885BB;
-    color: #29272A;
+    background-color: #333333;
+    color: #F5F5F5;
     padding: 20px;
     text-align: center;
   }
   
   nav {
-    background-color: #9885BB;
+    background-color: #333333;
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -33,7 +33,7 @@ body {
   
   main {
     padding: 20px;
-    background-color: #29272A;
+    background-color: #F5F5F5;
   }
   
   .projects-container {
@@ -44,17 +44,16 @@ body {
   
   .project {
     width: calc(50% - 10px);
-    background-color: #9885BB;
-    color: #29272A;
+    background-color: #333333;
+    color: #F5F5F5;
     padding: 20px;
     margin-bottom: 20px;
   }
   
 
   footer {
-
-    background-color: #9885BB;
-    color: #29272A;
+    background-color: #333333;
+    color: #F5F5F5;
     padding: 20px;
     text-align: center;
     
