@@ -2,19 +2,20 @@ body {
   font-family: 'Fira Code', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #29272A;
-  color: #9885BB;
+    background-color: #333333;
+  color: #F5F5F5;
 }
 
 header {
-  background-color: #9885BB;
-  color: #29272A;
+  background-color: #333333;
+  color: #F5F5F5;
   padding: 20px;
   text-align: center;
 }
 
 nav {
-  background-color: #9885BB;
+  background-color: #333333;
+  color: #F5F5F5;
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -33,7 +34,8 @@ nav a {
 
 main {
   padding: 20px;
-  background-color: #29272A;
+  background-color: #333333;
+  color: #F5F5F5;
 }
 
 .projects-container {
@@ -44,18 +46,17 @@ main {
 
 .project {
   width: calc(50% - 10px);
-  background-color: #9885BB;
-  color: #29272A;
+  background-color: #333333;
+  color: #F5F5F5;
   padding: 20px;
   margin-bottom: 20px;
+  border-bottom: 2px solid #F5F5F5;
 }
 
 
 footer {
-
-  background-color: #9885BB;
-  color: #29272A;
+  background-color: #333333; /* dark gray */
+  color: #F5F5F5; /* light gray */
   padding: 20px;
   text-align: center;
-  
 }
