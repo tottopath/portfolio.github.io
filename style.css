@@ -1,78 +1,74 @@
 body {
-    font-family: 'Fira Code', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #29272A;
-    color: #9885BB;
-  }
-  
-  textarea {
-    width: 50%;
-    height: 100px;
-    font-family: 'Proggy Clean', monospace;
-    font-size: 25px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    overflow: auto;
-    background-color: #9885BB;
-    color: #29272A;
-    resize: none;
-  }
-  
-  textarea#code-text {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
-  }
-  
-  .fade-out {
-    opacity: 0;
-    transition: opacity 1s;
-  }
-    
-  header {
-    background-color: #9885BB;
-    color: #29272A;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav {
-    background-color: #9885BB;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav a {
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-  }
-  
-  main {
-    padding: 20px;
-    background-color: #29272A;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
-  
+  font-family: 'Fira Code', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5; /* light gray */
+  color: #333333; /* dark gray */
+}
 
-  footer {
-    background-color: #9885BB;
-    color: #29272A;
-    padding: 20px;
-    text-align: center;
-    
-  }
-  
+textarea {
+  width: 50%;
+  height: 100px;
+  font-family: 'Proggy Clean', monospace;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  overflow: auto;
+  background-color: #333333; /* dark gray */
+  color: #F5F5F5; /* light gray */
+  resize: none;
+}
+
+textarea#code-text {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+header {
+  background-color: #333333; /* dark gray */
+  color: #F5F5F5; /* light gray */
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #333333; /* dark gray */
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  color: #F5F5F5; /* light gray */
+}
+
+main {
+  padding: 20px;
+  background-color: #F5F5F5; /* light gray */
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #333333; /* dark gray */
+  color: #F5F5F5; /* light gray */
+  padding: 20px;
+  text-align: center;
+}
